@@ -1,0 +1,43 @@
+{
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true, //=>
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "workbench.colorTheme": "Monokai-Cobalt",
+  "workbench.iconTheme": "material-icon-theme",
+  "omnisharp.path": "latest",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "Leopotam.csharpfixformat"
+  },
+  "csharpfixformat.style.spaces.beforeParenthesis": false,
+  "csharp.referencesCodeLens.enabled": false,
+  "cSpell.userWords": [
+    "Mathf",
+    "behaviour",
+    "machine",
+    "state"
+  ],
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.linting.pylintArgs": [
+    "--indent-string=\"  \"",
+    "--ignore=\"E1124\""
+  ],
+  "python.formatting.autopep8Args": [
+    "--indent-size=2",
+    "redyu"
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "editor.snippetSuggestions": "top",
+  "files.associations": {
+    "*.html": "html"
+  },
+  "window.zoomLevel": 0,
+}
