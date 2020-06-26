@@ -17,5 +17,25 @@
   {
     "key": "ctrl+alt+f5",
     "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "-markdown-table-formatter.moveColumnRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "-markdown-table-formatter.moveColumnLeft",
+    "when": "editorTextFocus"
   }
 ]

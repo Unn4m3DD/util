@@ -3,8 +3,7 @@
   "editor.fontLigatures": true, //=>
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "workbench.colorTheme": "Monokai-Cobalt",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula",
   "omnisharp.path": "latest",
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -14,9 +13,13 @@
   "csharpfixformat.style.spaces.beforeParenthesis": false,
   "csharp.referencesCodeLens.enabled": false,
   "cSpell.userWords": [
+    "Abdl",
     "Mathf",
+    "READMEABDL",
+    "Sena",
     "behaviour",
     "machine",
+    "pawngame",
     "state"
   ],
   "[python]": {
@@ -35,9 +38,26 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
-  "editor.snippetSuggestions": "top",
   "files.associations": {
-    "*.html": "html"
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "*.shader": "glsl"
   },
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "mervin.markdown-formatter"
+  },
+  "git.autofetch": true,
+  "cSpell.language": "en,pt-PT",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, DerivePointerAlignment: false, PointerAlignment: Left, ColumnLimit: 0}",
+  "editor.rulers": [
+    90
+  ],
+  "java.semanticHighlighting.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 }
