@@ -1,0 +1,11 @@
+if [[ $1 == "" ]]; then
+	echo "usage: modem-connect [modem_number] [on|off]"
+	exit
+fi
+if [[ $2 != "off" ]]; then
+	sudo mmcli -m $1 --simple-connect="apn=internet"
+	sudo qmi-network /dev/cdc-wdm0 start
+else
+	sudo mmcli -m $1 --simple-disconnect
+	sudo qmi-network /dev/cdc-wdm0 stop
+fi

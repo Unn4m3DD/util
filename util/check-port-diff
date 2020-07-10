@@ -1,0 +1,12 @@
+read -s -n 1 -p "Click any key"
+echo ""
+ls /dev/ > /tmp/dev1
+
+read -s -n 1 -p "After change click any key"
+echo ""
+ls /dev/ > /tmp/dev2
+
+echo "New Device List:"
+echo ""
+
+diff /tmp/dev1 /tmp/dev2 | grep -E "^[^0-9]"
