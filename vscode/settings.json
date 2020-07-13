@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true, //=>
-  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "workbench.colorTheme": "Dracula",
   "omnisharp.path": "latest",
