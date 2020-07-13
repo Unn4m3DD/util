@@ -1,44 +1,69 @@
 [
-    {
-      "key": "f5",
-      "command": "-workbench.action.debug.continue",
-      "when": "inDebugMode"
-    },
-    {
-      "key": "f5",
-      "command": "-workbench.action.debug.start",
-      "when": "!inDebugMode"
-    },
-    {
-      "key": "f5",
-      "command": "workbench.action.tasks.reRunTask"
-    },
-    {
-      "key": "ctrl+alt+f5",
-      "command": "workbench.action.tasks.runTask"
-    },
-    {
-      "key": "ctrl+e",
-      "command": "cursorEndSelect",
-      "when": "textInputFocus"
-    },
-    {
-      "key": "shift+end",
-      "command": "-cursorEndSelect",
-      "when": "textInputFocus"
-    },
-    {
-      "key": "shift+alt+right",
-      "command": "-markdown-table-formatter.moveColumnRight",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "shift+alt+left",
-      "command": "-markdown-table-formatter.moveColumnLeft",
-      "when": "editorTextFocus"
-    },
-    {
-      "key": "ctrl+[Semicolon]",
-      "command": "workbench.action.terminal.new"
-    }
-  ]
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.tasks.reRunTask"
+  },
+  {
+    "key": "ctrl+alt+f5",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "-markdown-table-formatter.moveColumnRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "-markdown-table-formatter.moveColumnLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+[Semicolon]",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  }
+]
