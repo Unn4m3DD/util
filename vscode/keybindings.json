@@ -39,7 +39,7 @@
   },
   {
     "key": "ctrl+[Semicolon]",
-    "command": "workbench.action.terminal.new"
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
     "key": "shift+alt+f",
