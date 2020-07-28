@@ -70,7 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$HOME/util:$PATH"
+export PATH="$HOME/util/util:$PATH"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

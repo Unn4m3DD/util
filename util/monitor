@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+import sys
+import time
+from subprocess import run
+
+def shell(command):
+  res = run(command, capture_output=True, shell=True)
+  if(res.returncode != 0):
+    if(not "not SIM-PIN locked" in res.stderr.decode()):
+      raise Exception("Error Running: {}\n{}".format(command, res.stderr.decode()))
+  return res.stdout.decode()
+
+if(len(sys.argv) != 2):
+  print("Usage: monitor <command>")
+
+cmd = sys.argv[1]
+
+first = shell(cmd)
+
+while(first == shell(cmd)):
+  time.sleep(1)
+
+first = set(first.split("\n"))
+second = set(shell(cmd).split("\n"))
+
+print("\n".join(first.difference(second).union(second.difference(first))))
