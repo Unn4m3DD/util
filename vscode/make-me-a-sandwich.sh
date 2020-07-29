@@ -9,8 +9,8 @@ code --install-extension ms-vscode.cpptools
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
 code --install-extension pkief.material-icon-theme
-#code --install-extension 
-#code --install-extension 
+code --install-extension coolbear.systemd-unit-file
+code --install-extension dpkristensen-garmin.udev-rules
 #code --install-extension 
 #code --install-extension 
 
