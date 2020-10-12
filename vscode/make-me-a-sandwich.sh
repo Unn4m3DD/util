@@ -11,7 +11,7 @@ code --install-extension eamodio.gitlens
 code --install-extension pkief.material-icon-theme
 code --install-extension coolbear.systemd-unit-file
 code --install-extension dpkristensen-garmin.udev-rules
-#code --install-extension 
+code --install-extension streetsidesoftware.code-spell-checker 
 #code --install-extension 
 
 
