@@ -70,7 +70,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-export PATH="$HOME/util/util:$PATH"
+export PATH="$HOME/util/util:.:$PATH"
+export HEADPHONE_NAME_DESKTOP="bluez_sink.E8_07_BF_30_FE_34.a2dp_sink"
+export MONITOR_NAME_DESKTOP="alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1"
+
+export HEADPHONE_NAME_LAPTOP="bluez_sink.E8_07_BF_30_FE_34.a2dp_sink"
+export MONITOR_NAME_LAPTOP="alsa_output.pci-0000_00_1f.3.analog-stereo"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
