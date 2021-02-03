@@ -1,0 +1,6 @@
+if [[ "$#" -ne 2 ]]; then
+  echo "Usage: auth_key [username] [hostname]"
+  exit 1
+fi
+key=$(cat ~/.ssh/id_rsa.pub)
+ssh "$1@$2" "echo \"$key\" >> /home/$1/.ssh/authorized_keys"
