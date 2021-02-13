@@ -72,7 +72,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/util/util:$PATH"
 export PATH="/opt/cuda/bin/:$PATH"
-alias x startx
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
