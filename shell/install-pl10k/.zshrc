@@ -71,6 +71,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/util/util:$PATH"
+export PATH="/opt/cuda/bin/:$PATH"
+alias x startx
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -96,6 +98,6 @@ export PATH="$HOME/util/util:$PATH"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+setxkbmap pt
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
