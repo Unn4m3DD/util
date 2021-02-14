@@ -2,6 +2,21 @@ theme = "modern"
 icons = "awesome"
 
 [[block]]
+block = "pacman"
+interval = 600
+format = "{pacman} updates available"
+format_singular = "{pacman} update available"
+format_up_to_date = ""
+critical_updates_regex = "(linux |linux-lts|linux-zen)"
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{max}°"
+chip = "coretemp-isa-0000"
+
+[[block]]
 block = "speedtest"
 bytes = true
 interval = 1800
@@ -16,6 +31,12 @@ format_swap = "{SUp}%"
 block = "cpu"
 interval = 1
 
+
+[[block]]
+block = "bluetooth"
+mac = "E8:07:BF:30:FE:34"
+label = ""
+
 [[block]]
 block = "sound"
 
@@ -24,7 +45,7 @@ block = "time"
 interval = 60
 format = "%a %d/%m %R"
 
-[[block]]
-block = "battery"
-interval = 10
-format = "{percentage}% {time}"
+#[[block]]
+#block = "battery"
+#interval = 10
+#format = "{percentage}% {time}"
