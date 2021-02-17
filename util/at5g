@@ -1,2 +1,0 @@
-sudo picocom --baud 115200 /dev/ttyUSB3 --echo
-

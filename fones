@@ -1,1 +1,0 @@
-printf "power on\nconnect E8:07:BF:30:FE:34" | bluetoothctl
