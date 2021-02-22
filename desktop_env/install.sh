@@ -10,5 +10,6 @@ rm -f ~/.config/i3status-rust/config.toml
 ln i3.d/i3/config ~/.config/i3/config
 ln i3.d/i3status-rust/config.toml ~/.config/i3status-rust/config.toml
 
-printf "#!/bin/sh\nfeh --no-fehbg --bg-scale '~/util/Final.png'" > ~/.fehbg
+printf "exec i3\n" > ~/.xinitrc
+printf "#!/bin/sh\nfeh --no-fehbg --bg-scale '~/util/Final.png'\n" > ~/.fehbg
 chmod +x ~/.fehbg
