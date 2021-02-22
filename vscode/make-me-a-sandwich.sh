@@ -1,13 +1,19 @@
-sudo pacman -Sy ttf-fira-code
+current_dir=$(pwd)
+sudo pacman -Sy ttf-fira-code --noconfirm
+mkdir ~/AUR/
+git clone https://aur.archlinux.org/visual-studio-code-bin.git
+cd visual-studio-code-bin
+makepkg -si --noconfirm
+cd $current_dir
+rm -f ~/.config/Code/User/keybindings.json 
+rm -f ~/.config/Code/User/settings.json
+rm -f ~/.ssh/config
 
-rm -f /home/$(whoami)/.config/Code/User/keybindings.json 
-rm -f /home/$(whoami)/.config/Code/User/settings.json
-rm -f /home/$(whoami)/.ssh/config
-
-ln keybindings.json /home/$(whoami)/.config/Code/User/keybindings.json 
-ln settings.json /home/$(whoami)/.config/Code/User/settings.json
+ln keybindings.json ~/.config/Code/User/keybindings.json 
+ln settings.json ~/.config/Code/User/settings.json
 code --install-extension ms-vscode-remote.remote-ssh
-ln ssh /home/$(whoami)/.ssh/config
+ln ssh ~/.ssh/config
+
 code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension oderwat.indent-rainbow
 code --install-extension ms-vscode.cpptools
