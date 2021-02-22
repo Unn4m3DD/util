@@ -1,8 +1,8 @@
 rm -f ~/.gitconfig
 ln .gitconfig ~/.gitconfig
 sudo pacman -Sy base-devel --noconfirm
-sudo install -m 777 scripts/aur_install /usr/bin/aur_install
-sudo install -m 777 scripts/aut_key /usr/bin/aut_key
+sudo install -m 777 scripts/aur-install /usr/bin/aur-install
+sudo install -m 777 scripts/auth-key /usr/bin/auth-key
 cd desktop_env && ./install.sh
 cd ../shell/alacritty && ./install.sh
 cd ../install-pl10k && ./install-pl10k.sh
