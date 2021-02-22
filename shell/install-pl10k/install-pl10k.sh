@@ -1,10 +1,7 @@
-if [[ $1 == "-h" ]]; then
-	echo "usage: install-pl10k [install command]"
-fi
 mkdir ~/.fonts
 cp ./fonts/* ~/.fonts
 fc-cache -f -v
-sudo pacman -S zsh
+sudo pacman -Sy zsh
 
 sudo curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sudo sh install.sh

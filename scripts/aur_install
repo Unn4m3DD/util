@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ "$#" -ne 1 ]; then
+    echo "Usage: aur_install [package_name]"
+fi
+current_dir=$(pwd)
+mkdir -p ~/AUR/
+cd ~/AUR/
+git clone https://aur.archlinux.org/$1.git
+cd $1
+makepkg -si --noconfirm
+cd $current_dir
