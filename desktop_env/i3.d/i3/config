@@ -208,8 +208,12 @@ bar {
         status_command i3status-rs
 }
 default_border none
+
 exec setxkbmap pt
 default_border none
 exec --no-startup-id ~/.fehbg 
+for_window [class="^.*"] border pixel 0
+gaps inner 20
+gaps outer 5
 exec xrandr --output HDMI1 --auto --above eDP1
 bindsym Print exec gscreenshot-cli -c

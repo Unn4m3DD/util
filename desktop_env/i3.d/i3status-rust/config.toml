@@ -32,10 +32,10 @@ block = "cpu"
 interval = 1
 
 
-[[block]]
-block = "bluetooth"
-mac = "E8:07:BF:30:FE:34"
-label = ""
+#[[block]]
+#block = "bluetooth"
+#mac = "E8:07:BF:30:FE:34"
+#label = ""
 
 [[block]]
 block = "sound"
@@ -45,7 +45,7 @@ block = "time"
 interval = 60
 format = "%a %d/%m %R"
 
-#[[block]]
-#block = "battery"
-#interval = 10
-#format = "{percentage}% {time}"
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"

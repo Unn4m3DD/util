@@ -1,7 +1,7 @@
 mkdir ~/.fonts
 cp ./fonts/* ~/.fonts
 fc-cache -f -v
-sudo pacman -Sy zsh
+sudo pacman -Sy zsh --noconfirm
 
 sudo curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sudo sh install.sh
