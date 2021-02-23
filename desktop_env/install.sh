@@ -1,4 +1,4 @@
-sudo pacman -Sy i3-gaps i3status-rust dmenu xorg-xinit xorg-server feh xorg-xrandr bash-completion --noconfirm
+sudo pacman -Sy i3-gaps i3status-rust dmenu xorg-xinit xorg-server feh xorg-xrandr bash-completion gnu-free-fonts --noconfirm
 sudo pacman -Sy pulseaudio pavucontrol pulseaudio-alsa pulseaudio-bluetooth --noconfirm
 aur_install gscreenshot
 aur_install google-chrome
