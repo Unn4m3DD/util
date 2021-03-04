@@ -1,5 +1,5 @@
 sudo pacman -Sy ttf-fira-code --noconfirm
-aur_install visual-studio-code-bin
+aur-install visual-studio-code-bin
 rm -f ~/.config/Code/User/keybindings.json 
 rm -f ~/.config/Code/User/settings.json
 rm -f ~/.ssh/config

@@ -1,7 +1,7 @@
-sudo pacman -Sy i3-gaps i3status-rust dmenu xorg-xinit xorg-server feh xorg-xrandr bash-completion gnu-free-fonts --noconfirm
+sudo pacman -Sy i3-gaps i3status-rust dmenu xorg-xinit xorg-server feh xorg-xrandr bash-completion gnu-free-fonts xclip --noconfirm
 sudo pacman -Sy pulseaudio pavucontrol pulseaudio-alsa pulseaudio-bluetooth --noconfirm
-aur_install gscreenshot
-aur_install google-chrome
+aur-install gscreenshot
+aur-install google-chrome
 mkdir -p ~/.config/i3/
 mkdir -p ~/.config/i3status-rust/
 
