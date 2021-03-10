@@ -1,5 +1,6 @@
 sudo pacman -Sy i3-gaps i3status-rust dmenu xorg-xinit xorg-server feh xorg-xrandr bash-completion gnu-free-fonts xclip --noconfirm
 sudo pacman -Sy pulseaudio pavucontrol pulseaudio-alsa pulseaudio-bluetooth --noconfirm
+sudo pacman -Sy speedtest-cli --noconfirm
 aur-install gscreenshot
 aur-install google-chrome
 mkdir -p ~/.config/i3/
