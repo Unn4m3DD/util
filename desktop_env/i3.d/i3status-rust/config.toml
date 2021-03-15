@@ -32,10 +32,10 @@ block = "cpu"
 interval = 1
 
 
-#[[block]]
-#block = "bluetooth"
-#mac = "E8:07:BF:30:FE:34"
-#label = ""
+[[block]]
+block = "bluetooth"
+mac = "E8:07:BF:30:FE:34"
+label = ""
 
 [[block]]
 block = "sound"
