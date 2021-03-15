@@ -97,7 +97,6 @@ export PATH="/opt/cuda/bin/:$PATH"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-setxkbmap -model abnt2 -layout pt
-
+TERM=xterm-256color
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
