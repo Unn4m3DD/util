@@ -1,5 +1,9 @@
-theme = "modern"
-icons = "awesome"
+
+[theme]
+name = "native"
+
+[icons]
+name = "awesome"
 
 [[block]]
 block = "pacman"
@@ -45,7 +49,7 @@ block = "time"
 interval = 60
 format = "%a %d/%m %R"
 
-[[block]]
-block = "battery"
-interval = 10
-format = "{percentage}% {time}"
+#[[block]]
+#block = "battery"
+#interval = 10
+#format = "{percentage}% {time}"

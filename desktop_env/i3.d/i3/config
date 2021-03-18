@@ -194,7 +194,7 @@ bindsym $mod+o exec echo $MONITOR_NAME_DESKTOP >> /tmp/a
 # finds out, if available)
 
 bar {
-	font pango:DejaVu Sans Mono, FontAwesome 16
+	font pango: DejaVu Sans Mono, FontAwesome 16
     	position bottom
     	colors {
         	separator #666666

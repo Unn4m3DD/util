@@ -60,4 +60,12 @@
   "java.configuration.checkProjectSettingsExclusions": false,
   "explorer.confirmDelete": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+],
+"python.languageServer": "Microsoft",
+"cmake.configureOnOpen": true,
 }
