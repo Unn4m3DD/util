@@ -44,7 +44,6 @@
     "*.bdl": "bdl",
     "*.shader": "glsl"
   },
-  "window.zoomLevel": 1,
   "workbench.iconTheme": "material-icon-theme",
   "liveServer.settings.donotShowInfoMsg": true,
   "[markdown]": {
@@ -68,4 +67,5 @@
 ],
 "python.languageServer": "Microsoft",
 "cmake.configureOnOpen": true,
+"window.zoomLevel": 1,
 }
