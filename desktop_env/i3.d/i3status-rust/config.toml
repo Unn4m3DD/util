@@ -12,20 +12,23 @@ critical_updates_regex = "(linux |linux-lts|linux-zen)"
 block = "temperature"
 collapsed = false
 interval = 10
-format = "{max}°"
+format = "{max}"
 chip = "coretemp-isa-0000"
 
 [[block]]
 block = "speedtest"
-bytes = true
+format = "{speed_down}"
+#bytes = true
 interval = 1800
 
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{mem_used_percents}"
 
+[[block]]
+block = "backlight"
+device = "intel_backlight"
 
 [[block]]
 block = "cpu"
@@ -35,6 +38,7 @@ interval = 1
 [[block]]
 block = "bluetooth"
 mac = "E8:07:BF:30:FE:34"
+format = ""
 label = ""
 
 [[block]]
@@ -45,7 +49,7 @@ block = "time"
 interval = 60
 format = "%a %d/%m %R"
 
-#[[block]]
-#block = "battery"
-#interval = 10
-#format = "{percentage}% {time}"
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}"

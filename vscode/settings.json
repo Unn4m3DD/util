@@ -58,7 +58,11 @@
     90
   ],
   "cmake.debugConfig": {
-    "args": ["11.11.11.11", "55555", "17"]
+    "args": [
+      "11.11.11.11",
+      "55555",
+      "17"
+    ]
   },
   "java.semanticHighlighting.enabled": true,
   "java.configuration.checkProjectSettingsExclusions": false,
@@ -69,8 +73,9 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-],
-"python.languageServer": "Microsoft",
-"cmake.configureOnOpen": true,
-"angular.experimental-ivy": true,
+  ],
+  "python.languageServer": "Microsoft",
+  "cmake.configureOnOpen": true,
+  "angular.experimental-ivy": true,
+  "window.zoomLevel": 1
 }
