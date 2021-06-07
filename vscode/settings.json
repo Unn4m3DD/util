@@ -20,6 +20,7 @@
     "behaviour",
     "machine",
     "pawngame",
+    "quadtree",
     "state"
   ],
   "[python]": {
@@ -64,8 +65,29 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-],
-"python.languageServer": "Microsoft",
-"cmake.configureOnOpen": true,
-"window.zoomLevel": 1,
+  ],
+  "cmake.debugConfig": {
+    "args": [
+      "11.11.11.11",
+      "55555",
+      "1"
+    ]
+  },
+  "python.languageServer": "Microsoft",
+  "cmake.configureOnOpen": true,
+  "C_Cpp.updateChannel": "Insiders",
+  "angular.experimental-ivy": true,
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ],
+  "window.zoomLevel": 1,
 }
