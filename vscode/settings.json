@@ -74,8 +74,21 @@
       "filenamePattern": "*.ipynb"
     }
   ],
+  "angular.experimental-ivy": true,
+  "window.zoomLevel": 1,
   "python.languageServer": "Microsoft",
   "cmake.configureOnOpen": true,
-  "angular.experimental-ivy": true,
-  "window.zoomLevel": 1
+  "C_Cpp.updateChannel": "Insiders",
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "terminal.integrated.tabs.enabled": true,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ]
 }
