@@ -4,6 +4,13 @@ sudo pacman -Sy speedtest-cli --noconfirm
 aur-install gscreenshot
 aur-install google-chrome
 aur-install polybar
+
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+cd polybar-themes
+sh setup.sh
+cd ..
+rm -rf polybar-themes
+
 mkdir -p ~/.config/i3/
 mkdir -p ~/.config/polybar/
 
