@@ -1,45 +1,58 @@
 {
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 12,
+  "bladeFormatter.format.wrapLineLength": 60,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "editor.pasteAs.enabled": false,
+  "editor.pasteAs.showPasteSelector": "never",
+  "terminal.integrated.scrollback": 5000,
+  "typescript.tsserver.log": "off",
+  "tailwindCSS.classAttributes": ["class", "className", "classNames"],
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true, //=>
-  "terminal.integrated.fontFamily": "MesloLGS NF",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "workbench.colorTheme": "Dracula",
-  "omnisharp.path": "latest",
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
   "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "[csharp]": {
-    "editor.defaultFormatter": "Leopotam.csharpfixformat"
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh"
+    }
   },
-  "csharpfixformat.style.spaces.beforeParenthesis": false,
-  "csharp.referencesCodeLens.enabled": false,
   "cSpell.userWords": [
     "Abdl",
-    "Mathf",
-    "READMEABDL",
-    "Sena",
     "behaviour",
+    "Buildable",
+    "datetime",
     "denm",
+    "dont",
+    "fontawesome",
+    "formatjs",
+    "formik",
+    "fortawesome",
+    "getcanonicallocales",
+    "gorhom",
+    "gymflow",
+    "gymflowmobile",
+    "jsbundle",
+    "languagedetector",
+    "libphonenumber",
     "machine",
+    "Mathf",
+    "miragejs",
+    "numberformat",
     "pawngame",
+    "peasy",
+    "pluralrules",
     "quadtree",
-    "state"
-  ],
-  "[python]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "python.linting.pylintArgs": [
-    "--indent-string=\"  \"",
-    "--ignore=\"E1124\""
-  ],
-  "python.formatting.autopep8Args": [
-    "--indent-size=2",
-    "redyu"
+    "READMEABDL",
+    "scenicness",
+    "Sena",
+    "state",
+    "sweetalert",
+    "waitlisted",
+    "xcassets"
   ],
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.jediEnabled": false,
   "files.associations": {
     "*.html": "html",
     "*.pl": "prolog",
@@ -49,46 +62,200 @@
   "workbench.iconTheme": "material-icon-theme",
   "liveServer.settings.donotShowInfoMsg": true,
   "[markdown]": {
-    "editor.defaultFormatter": "mervin.markdown-formatter"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
   "cSpell.language": "en,pt-PT",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, DerivePointerAlignment: false, PointerAlignment: Left, ColumnLimit: 0}",
-  "editor.rulers": [
-    90
-  ],
-  "cmake.debugConfig": {
-    "args": [
-      "11.11.11.11",
-      "55555",
-      "17"
-    ]
-  },
-  "java.semanticHighlighting.enabled": true,
-  "java.configuration.checkProjectSettingsExclusions": false,
+  "editor.rulers": [120],
   "explorer.confirmDelete": false,
+  "terminal.integrated.tabs.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "none",
+  "yaml.schemas": {
+    "file:///Users/andrepatacas/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+    "kubernetes": ["k8s.yaml"]
+  },
+  "redhat.telemetry.enabled": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Dracula",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "git.openRepositoryInParentFolders": "always",
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editorAssociations": [
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "nxConsole.showNodeVersionOnStartup": false,
+  "[elixir]": {
+    "editor.defaultFormatter": "animus-coop.vscode-elixir-mix-formatter"
+  },
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
     {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
+      "before": [";"],
+      "after": ["right"]
+    },
+    {
+      "before": ["k"],
+      "after": ["down"]
+    },
+    {
+      "before": ["l"],
+      "after": ["up"]
+    },
+    {
+      "before": ["j"],
+      "after": ["left"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-d>"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-u>"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "after": [
+        "v",
+        "a",
+        "\"",
+        "c",
+        "{",
+        "c",
+        "l",
+        "a",
+        "s",
+        "s",
+        "N",
+        "a",
+        "m",
+        "e",
+        "s",
+        "(",
+        ",",
+        "{",
+        "<Esc>","j",
+        "j",
+        "p"
+      ],
+    },
+    {
+      "before": ["g", "r"],
+      "after": [],
+      "commands": [{ "command": "editor.action.rename", "args": [] }]
     }
   ],
-  "angular.experimental-ivy": true,
-  "window.zoomLevel": 1,
-  "python.languageServer": "Microsoft",
-  "cmake.configureOnOpen": true,
-  "C_Cpp.updateChannel": "Insiders",
-  "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
-  },
-  "terminal.integrated.tabs.enabled": true,
-  "mssql.connections": [
+  "vim.visualModeKeyBindings": [
     {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": "{{put-password-here}}"
+      "before": [";"],
+      "after": ["right"]
+    },
+    {
+      "before": ["k"],
+      "after": ["down"]
+    },
+    {
+      "before": ["l"],
+      "after": ["up"]
+    },
+    {
+      "before": ["j"],
+      "after": ["left"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-d>"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-u>"]
     }
+  ],
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "relative",
+  "totalTypeScript.hiddenTips": [
+    "generic-slots-in-functions",
+    "basic-types",
+    "typing-function-parameters",
+    "passing-generics-to-types",
+    "type-alias-declaration",
+    "ts-object-type",
+    "any-type",
+    "optional-object-property",
+    "type-alias-with-generics",
+    "type-alias-with-multiple-generics",
+    "array-type",
+    "interface-declaration",
+    "as-const",
+    "typeof",
+    "variable-type-annotation",
+    "as-assertion",
+    "union-type",
+    "undefined-keyword",
+    "non-null-expression",
+    "literal-type",
+    "function-return-type",
+    "as-const-on-object",
+    "tuple-type",
+    "null-keyword",
+    "readonly-object-property",
+    "mapped-type",
+    "partial-utility-type",
+    "in-operator-narrowing",
+    "conditional-type",
+    "readonly-utility-type",
+    "record-utility-type",
+    "keyof",
+    "returntype-utility-type",
+    "extract-utility-type",
+    "never-keyword",
+    "required-utility-type",
+    "infer",
+    "pick-utility-type",
+    "omit-utility-type",
+    "interface-with-generics"
   ]
 }
