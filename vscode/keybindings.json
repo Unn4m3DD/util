@@ -1,74 +1,206 @@
+// 20230801012239
+// https://gist.githubusercontent.com/Unn4m3DD/6b7ef7c7c9ad697cf4e079e3eaafb8a0/raw/42e8146231b3189f8653a407e004a3ccfcbe22c9/keybindings.json
+
 [
   {
-    "key": "f5",
-    "command": "-workbench.action.debug.continue",
-    "when": "inDebugMode"
-  },
-  {
-    "key": "f5",
-    "command": "-workbench.action.debug.start",
-    "when": "!inDebugMode"
-  },
-  {
-    "key": "f5",
-    "command": "workbench.action.tasks.reRunTask"
-  },
-  {
-    "key": "ctrl+shift+f5",
-    "command": "workbench.action.tasks.runTask"
-  },
-  {
     "key": "ctrl+e",
-    "command": "cursorEndSelect",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "textInputFocus"
   },
   {
-    "key": "shift+end",
-    "command": "-cursorEndSelect",
+    "key": "ctrl+x",
+    "command": "execCut",
     "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+right",
-    "command": "-markdown-table-formatter.moveColumnRight",
-    "when": "editorTextFocus"
+    "key": "ctrl+c",
+    "command": "execCopy",
+    "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+left",
-    "command": "-markdown-table-formatter.moveColumnLeft",
-    "when": "editorTextFocus"
+    "key": "ctrl+v",
+    "command": "execPaste",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "undo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "redo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+backspace",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+backspace",
+    "command": "deleteWordRight",
+    "when": ""
+  },
+  {
+    "key": "ctrl+a",
+    "command": "editor.action.selectAll",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "textInputFocus"
   },
   {
     "key": "ctrl+[Semicolon]",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "shift+alt+f",
+    "key": "cmd+shift+f",
     "command": "editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
-    "key": "ctrl+shift+i",
-    "command": "-editor.action.formatDocument",
-    "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    "key": "ctrl+left",
+    "command": "cursorWordLeft",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+f",
-    "command": "editor.action.formatDocument.none",
-    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+    "key": "ctrl+shift+left",
+    "command": "cursorWordLeftSelect",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+i",
-    "command": "-editor.action.formatDocument.none",
-    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+    "key": "ctrl+right",
+    "command": "cursorWordRight",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+f",
-    "command": "-filesExplorer.findInFolder",
-    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    "key": "alt+m t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "member watch tests"
   },
   {
-    "key": "ctrl+shift+f5",
-    "command": "-workbench.action.debug.restart",
-    "when": "inDebugMode"
+    "key": "alt+m a",
+    "command": "workbench.action.tasks.runTask",
+    "args": "member intent android"
+  },
+  {
+    "key": "alt+m s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "member start server"
+  },
+  {
+    "key": "alt+m i",
+    "command": "workbench.action.tasks.runTask",
+    "args": "member intent ios"
+  },
+  {
+    "key": "alt+s t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "staff watch tests"
+  },
+  {
+    "key": "alt+s a",
+    "command": "workbench.action.tasks.runTask",
+    "args": "staff intent android"
+  },
+  {
+    "key": "alt+s s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "staff start server"
+  },
+  {
+    "key": "alt+s i",
+    "command": "workbench.action.tasks.runTask",
+    "args": "staff intent ios"
+  },
+  {
+    "key": "alt+w",
+    "command": "workbench.action.tasks.runTask",
+    "args": "adb over wifi"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "git.stageSelectedRanges",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "\u0003"
+    },
+    "when": "terminalFocus && !terminalTextSelected"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": " terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.debug.prevConsole",
+    "when": "inDebugRepl"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.debug.nextConsole",
+    "when": "inDebugRepl"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+alt+e",
+    "command": "eslint.executeAutofix"
   }
 ]
